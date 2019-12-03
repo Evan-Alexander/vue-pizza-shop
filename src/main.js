@@ -15,6 +15,7 @@ Vue.use(MdButton);
 Vue.use(MdDrawer);
 Vue.use(MdCard);
 Vue.use(VueCarousel);
+
 Vue.use(VueScrollReveal, {
   duration: 800,
   scale: 1,

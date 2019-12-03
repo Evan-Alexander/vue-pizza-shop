@@ -173,7 +173,9 @@ button.md-raised {
             MENU CONTAINER
 ==================================*/
 
-
+.newsl_container {
+  padding-bottom: 8em;
+}
 
 .newsl_container h2 {
     font-size: 28px;
