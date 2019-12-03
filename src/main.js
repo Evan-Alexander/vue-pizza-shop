@@ -1,15 +1,27 @@
 import Vue from 'vue';
 import App from './App.vue';
-import { MdButton, MdDrawer } from 'vue-material/dist/components'
+import VueResource from 'vue-resource'
+import VueScrollReveal from 'vue-scroll-reveal'
+
+import { MdButton, MdDrawer, MdCard } from 'vue-material/dist/components'
 import 'vue-material/dist/vue-material.min.css'
 import VueCarousel from 'vue-carousel';
 
 Vue.config.productionTip = false;
 
+Vue.use(VueResource);
+
 Vue.use(MdButton);
 Vue.use(MdDrawer);
+Vue.use(MdCard);
 Vue.use(VueCarousel);
+Vue.use(VueScrollReveal, {
+  duration: 800,
+  scale: 1,
+  distance: '50px'
+});
 
+Vue.http.options.root = 'https://vue-pizza-app-db971.firebaseio.com/'
 new Vue({
   render: h => h(App),
 }).$mount('#app')

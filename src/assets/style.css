@@ -127,6 +127,11 @@ footer .container {
     margin-bottom: 40px;
 }
 
+button.md-raised {
+  background-color: #c10a29;
+  color: white;
+}
+
 /*================================
             MENU CONTAINER
 ==================================*/
